@@ -165,12 +165,30 @@ Equation \ref{eq1} can be changed as follows without affecting the inequality.
 
 Since equation \ref{eq3} cannot be reduced to equation \ref{eq2}, I would say that the independent set does not have an approximation ration of 2.
 
-\item \textbf{(20 points)} In this exercise, we transform an instance of traveling salesman problem into another instance whose edge weights satisfy the triangle inequality.Specifically, let $G$ be a complete undirected graph of $n$ vertices in which each edge $(u, v)$ has a weight $w(u, v) \geq 0$. However, the edge weights of $G$ may not satisfy the triangle inequality.
+\item \textbf{(20 points)} In this exercise, we transform an instance of traveling salesman problem into another instance whose edge weights satisfy the triangle inequality.
+
+Specifically, let $G$ be a complete undirected graph of $n$ vertices in which each edge $(u, v)$ has a weight $w(u, v) \geq 0$. However, the edge weights of $G$ may not satisfy the triangle inequality.
 
 \begin{enumerate}\item In polynomial time, construct another complete undirected graph $G\textprime$ of $n$ vertices such that the following hold: (1) each edge $(u,v)$ has a weight $w\textprime(u,v) \geq 0$; (2) the edge weights of $G\textprime$ satisfy the triangle inequality; (3) a TSP optimal cycle of $G$ corresponds to a TSP optimal cycle of $G\textprime$.
 
-\item In class we have designed a 2-approximation algorithm for the TSP problem with the triangle inequality. Because of the above (a), does this mean that there also exists a 2-approximation algorithm for the general TSP problem without the triangle inequality? Please justify your answer.
+\item In class we have designed a 2-approximation algorithm for the TSP problem with the triangle inequality. Because of the above (a), does this mean that there also exists a 2-approximation algorithm for the general TSP problem without the triangle inequality? Please justify your answer.\\
+\end{enumerate}
 
+\begin{enumerate}
+\item In order to construct graph $G\textprime$, make it the same as graph $G$, with the difference that every edge has a weight of 1. This construction can be done in $O(V+E)$ time or polynomial time (here $V$ and $E$ are the number of vertices and edges in the graphs). Since every edge has a weight of 1, any triangle in the graph will satisfy the triangle inequality. A TSP optimal cycle in graph $G$ will map to a cycle in graph $G\textprime$ that starts at a node, visits every other node and returns to the starting node. This cycle in graph $G\textprime$ will be a TSP optimal cycle since the length of the path will be equal to the number of nodes, and any cycle that starts at a node, visits every other path and returns to the starting node will have a length equal to the number of nodes.
+
+\item If we can show that there exists a 2-approximation algorithm for the general TSP problem without the triangle inequality 
+\begin{enumerate}
+\item if and only if there exists a TSP problem with triangle inequality having a 2-approximation algorithm
+
+\item the TSP problem with triangle inequality was constructed in polynomial time from the TSP problem without triangle inequality.
+\end{enumerate}
+
+Then we can say that there exists a 2-approximation algorithm for the general TSP problem without the triangle inequality.
+
+We have already shown that (ii) is true. We know that the TSP problem with the triangle inequality has a 2-approximation solution. The equivalent TSP problem without the triangle inequality, will have a cycle going through the corresponding nodes. This cycle may not satisfy that condition that the $Cycle \: Weight \leq 2 * TSP \: optimal \: cycle \: weight$ because the triangle inequality may not be satisfied. So the cycle may not be limited by $2 * TSP \: optimal \: cycle \: weight$.
+
+This means that even though (a) is true, there may not exist a 2-approximation algorithm for the general TSP problem without the triangle inequality.
 \end{enumerate}
 
 
