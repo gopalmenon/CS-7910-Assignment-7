@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 MAR 2016 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 MAR 2016 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,50 +1123,50 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./HW7.aux)
 \openout1 = `HW7.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 81.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 80.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 80.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 81.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 80.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 80.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 81.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 80.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 80.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 81.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 80.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 81.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 80.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -1207,15 +1207,15 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 81.
-Package gensymb Info: Math companion symbols declared on input line 81.
-LaTeX Info: Redefining \degree on input line 81.
-LaTeX Info: Redefining \celsius on input line 81.
+(Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 80.
+Package gensymb Info: Math companion symbols declared on input line 80.
+LaTeX Info: Redefining \degree on input line 80.
+LaTeX Info: Redefining \celsius on input line 80.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 81.
-LaTeX Info: Redefining \ohm on input line 81.
-Package gensymb Info: Using \textohm for \ohm on input line 81.
-Package gensymb Info: Using \textmu for \micro on input line 81.
+erthousand on input line 80.
+LaTeX Info: Redefining \ohm on input line 80.
+Package gensymb Info: Using \textohm for \ohm on input line 80.
+Package gensymb Info: Using \textmu for \micro on input line 80.
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1274,40 +1274,40 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 84.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 83.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 84
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 83
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 84.
+(Font)              scaled to size 13.24796pt on input line 83.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 84.
+(Font)              scaled to size 9.19998pt on input line 83.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 84.
+(Font)              scaled to size 7.35999pt on input line 83.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 84.
+(Font)              scaled to size 13.24796pt on input line 83.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 84.
+(Font)              scaled to size 9.19998pt on input line 83.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 84.
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+(Font)              scaled to size 7.35999pt on input line 83.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 83.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
@@ -1315,47 +1315,58 @@ File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Missing character: There is no ^^L in font fourier-mex!
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 86.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 86.
+(Font)              scaled to size 10.07397pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 86.
+(Font)              scaled to size 7.63599pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 86.
+(Font)              scaled to size 5.51999pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 86.
+(Font)              scaled to size 10.07397pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 86.
+(Font)              scaled to size 7.63599pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 86.
+(Font)              scaled to size 5.51999pt on input line 85.
 Missing character: There is no ^^L in font fourier-mex!
 \pgf@layerbox@background=\box78
 \pgf@layerboxsaved@background=\box79
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 112.
+(Font)              scaled to size 6.99199pt on input line 114.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 112.
+(Font)              scaled to size 6.99199pt on input line 114.
 Missing character: There is no ^^L in font fourier-mex!
 Missing character: There is no ^^L in font fourier-mex!
  [1
 
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-HW7.aux) ) 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+ []
+
+
+Overfull \hbox (1.71204pt too wide) in paragraph at lines 139--140
+[]\T1/futs/m/n/10.95 Let $\FML/futmi/m/it/10.95 VC[]$ \T1/futs/m/n/10.95 and $\
+FML/futmi/m/it/10.95 IS[]$ \T1/futs/m/n/10.95 be the Ver-tex Cover and In-de-pe
+n-dent Set found by the 2-approximation
+ []
+
+[2] (./HW7.aux) ) 
 Here is how much of TeX's memory you used:
- 26328 strings out of 493089
- 522345 string characters out of 6134842
- 626645 words of memory out of 5000000
- 29349 multiletter control sequences out of 15000+600000
- 80877 words of font info for 100 fonts, out of 8000000 for 9000
+ 26338 strings out of 493089
+ 522427 string characters out of 6134842
+ 627647 words of memory out of 5000000
+ 29352 multiletter control sequences out of 15000+600000
+ 82680 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,67p,10390b,901s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on HW7.pdf (2 pages, 46100 bytes).
+ 64i,11n,67p,10390b,907s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on HW7.pdf (2 pages, 52807 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

@@ -39,7 +39,6 @@
 \renewcommand{\footrulewidth}{0pt} % Remove footer underlines
 \setlength{\headheight}{5pt} % Customize the height of the header
 
-\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 \numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 \numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 
@@ -85,7 +84,9 @@
 \begin{enumerate}
 \item \textbf{(10 points)} We have studied a 2-approximation algorithm for the vertex cover problem in class. Give an example of a graph such that the size of the vertex cover computed by our algorithm is always equal to $2 * OPT$, where $OPT$ is the size of the vertex cover in an optimal solution.
 This actually proves that the approximation ratio 2 is \enquote{tight} for our algorithm.
+\begin{comment}
 
+\end{comment}
 \pgfdeclarelayer{background}
 \pgfsetlayers{background,main}
 
@@ -99,6 +100,7 @@
 \tikzstyle{ignored edge} = [draw,line width=5pt,-,black!20]
 
 \begin{figure}[hb]
+\centering
 \begin{tikzpicture}[scale=2, auto,swap]
     % Draw a 7,11 network
     % First we draw the vertices
@@ -121,6 +123,47 @@
 \end{frame}
 
 Figure \ref{StarGraph} shows an example of a star shaped graph where node $a$ is connected to every other node by an edge. In such a graph, the set of vertices with just the node $a$ will be the vertex cover since the node will cover all the edges. If we use the 2-approximation algorithm, the vertex cover will include the two vertices in a randomly selected edge. So in such a graph, the 2-approximation algorithm will always return a vertex set of size $2$, which will be twice the optimum solution of size $1$. 
+
+\item \textbf{(10 points)} Let $G$ be an undirected graph of $n$ vertices and $m$ edges. Let $V$ denote the vertex set of $G$. Recall that we have proved the following observation about the relationship between a vertex cover and an independent set.
+\textbf{Observation 1} A subset $S \subseteq V$ is a vertex cover of $G$ if and only if the subset $S\textprime = V - S$ is an independent set of $G$.
+In class we have designed a 2-approximation algorithm for computing a vertex cover. Suppose we use the following approximation algorithm to compute an independent set of $G$.
+
+First, we use the algorithm studied in class to compute a vertex cover $S$ of $G$. Then, we return $S\textprime = V - S$ as the solution for our independent set problem. By the above observation, $S\textprime$ is an independent set of $G$.
+Since the approximation ratio of the algorithm for computing the vertex cover is 2, is the approximation ratio of the above algorithm for computing an independent set also 2? 
+Please justify your answer.\\
+
+Let $VC_2$ and $IS_2$ be the Vertex Cover and Independent Set found by the 2-approximation algorithm as described above. Let the corresponding optimal solutions be denoted by $VC_{OPT}$ and $IS_{OPT}$.
+
+We know the following are true
+\begin{align*} \label{ISplusVC}
+&\left | VC_2 \right | + \left | IS_2 \right | = \left | V \right |\\
+&\left | VC_{OPT} \right | + \left | IS_{OPT} \right | = \left | V \right |\\
+&\left | VC_2 \right | \leq 2 \left | VC_{OPT} \right |
+\end{align*}
+
+It follows from the above that
+\begin{align*} 
+\left | V \right | - \left | IS_2 \right | &\leq 2( \left | V \right | - \left| IS_{OPT} \right|)\\
+2 \left | IS_{OPT} \right | &\leq 2 \left | V \right | - \left | V \right | + \left | IS_2 \right |\\
+\end{align*}
+\begin{equation} 
+\label{eq1}
+\left | IS_{OPT} \right | \leq \frac{1}{2} (\left | V \right | + \left | IS_2 \right |)
+\end{equation}
+
+For the independent set obtained by the above algorithm to have an approximation ratio of 2, the following should be true
+\begin{align}
+\label{eq2} 
+\left | IS_{OPT} \right | \leq 2 \left | IS_2 \right |)
+\end{align}
+
+Equation \ref{eq1} can be changed as follows without affecting the inequality.
+\begin{equation} 
+\label{eq3}
+\left | IS_{OPT} \right | \leq 2 \left | IS_2 \right | + \frac{1}{2} \left | V \right |
+\end{equation}
+
+Since equation \ref{eq3} cannot be reduced to equation \ref{eq2}, I would say that the independent set does not have an approximation ration of 2.
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
