@@ -83,7 +83,8 @@
 
 \begin{enumerate}
 \item \textbf{(10 points)} We have studied a 2-approximation algorithm for the vertex cover problem in class. Give an example of a graph such that the size of the vertex cover computed by our algorithm is always equal to $2 * OPT$, where $OPT$ is the size of the vertex cover in an optimal solution.
-This actually proves that the approximation ratio 2 is \enquote{tight} for our algorithm.
+
+This actually proves that the approximation ratio 2 is \enquote{tight} for our algorithm.
 \begin{comment}
 
 \end{comment}
@@ -122,14 +123,17 @@
 
 \end{frame}
 
-Figure \ref{StarGraph} shows an example of a star shaped graph where node $a$ is connected to every other node by an edge. In such a graph, the set of vertices with just the node $a$ will be the vertex cover since the node will cover all the edges. If we use the 2-approximation algorithm, the vertex cover will include the two vertices in a randomly selected edge. So in such a graph, the 2-approximation algorithm will always return a vertex set of size $2$, which will be twice the optimum solution of size $1$. 
+Figure \ref{StarGraph} shows an example of a star shaped graph where node $a$ is connected to every other node by an edge. In such a graph, the set of vertices with just the node $a$ will be the vertex cover since the node will cover all the edges. If we use the 2-approximation algorithm, the vertex cover will consist of the two vertices in a randomly selected edge. So in such a graph, the 2-approximation algorithm will always return a vertex set of size $2$, which will be twice the optimum solution of size $1$. 
 
 \item \textbf{(10 points)} Let $G$ be an undirected graph of $n$ vertices and $m$ edges. Let $V$ denote the vertex set of $G$. Recall that we have proved the following observation about the relationship between a vertex cover and an independent set.
-\textbf{Observation 1} A subset $S \subseteq V$ is a vertex cover of $G$ if and only if the subset $S\textprime = V - S$ is an independent set of $G$.
-In class we have designed a 2-approximation algorithm for computing a vertex cover. Suppose we use the following approximation algorithm to compute an independent set of $G$.
+
+\textbf{Observation 1} A subset $S \subseteq V$ is a vertex cover of $G$ if and only if the subset $S\textprime = V - S$ is an independent set of $G$.
+
+In class we have designed a 2-approximation algorithm for computing a vertex cover. Suppose we use the following approximation algorithm to compute an independent set of $G$.
 
 First, we use the algorithm studied in class to compute a vertex cover $S$ of $G$. Then, we return $S\textprime = V - S$ as the solution for our independent set problem. By the above observation, $S\textprime$ is an independent set of $G$.
-Since the approximation ratio of the algorithm for computing the vertex cover is 2, is the approximation ratio of the above algorithm for computing an independent set also 2? 
+
+Since the approximation ratio of the algorithm for computing the vertex cover is 2, is the approximation ratio of the above algorithm for computing an independent set also 2? 
 Please justify your answer.\\
 
 Let $VC_2$ and $IS_2$ be the Vertex Cover and Independent Set found by the 2-approximation algorithm as described above. Let the corresponding optimal solutions be denoted by $VC_{OPT}$ and $IS_{OPT}$.
@@ -157,19 +161,24 @@ For the independent set obtained by the above algorithm to have an approximation
 \left | IS_{OPT} \right | \leq 2 \left | IS_2 \right |)
 \end{align}
 
-Equation \ref{eq1} can be changed as follows without affecting the inequality.
-\begin{equation} 
-\label{eq3}
-\left | IS_{OPT} \right | \leq 2 \left | IS_2 \right | + \frac{1}{2} \left | V \right |
-\end{equation}
+For the independent set to have an approximation ratio of 2, the following should be true based on equations \ref{eq1} and \ref{eq2}:
+\begin{align*}
+\frac{1}{2} (\left | V \right | + \left | IS_2 \right |) &\leq 2\left | IS_2 \right |\\
+\frac{1}{2} \left | V \right | &\leq \frac{3}{2} \left | IS_2 \right |\\
+\end{align*}
+\begin{align}
+\label{eq3} 
+\left | V \right | &\leq 3 \left | IS_2 \right |
+\end{align}
 
-Since equation \ref{eq3} cannot be reduced to equation \ref{eq2}, I would say that the independent set does not have an approximation ration of 2.
+Since equation \ref{eq3} cannot always true, I would say that the independent set does not have an approximation ratio of 2.
 
 \item \textbf{(20 points)} In this exercise, we transform an instance of traveling salesman problem into another instance whose edge weights satisfy the triangle inequality.
 
 Specifically, let $G$ be a complete undirected graph of $n$ vertices in which each edge $(u, v)$ has a weight $w(u, v) \geq 0$. However, the edge weights of $G$ may not satisfy the triangle inequality.
 
-\begin{enumerate}\item In polynomial time, construct another complete undirected graph $G\textprime$ of $n$ vertices such that the following hold: (1) each edge $(u,v)$ has a weight $w\textprime(u,v) \geq 0$; (2) the edge weights of $G\textprime$ satisfy the triangle inequality; (3) a TSP optimal cycle of $G$ corresponds to a TSP optimal cycle of $G\textprime$.
+\begin{enumerate}
+\item In polynomial time, construct another complete undirected graph $G\textprime$ of $n$ vertices such that the following hold: (1) each edge $(u,v)$ has a weight $w\textprime(u,v) \geq 0$; (2) the edge weights of $G\textprime$ satisfy the triangle inequality; (3) a TSP optimal cycle of $G$ corresponds to a TSP optimal cycle of $G\textprime$.
 
 \item In class we have designed a 2-approximation algorithm for the TSP problem with the triangle inequality. Because of the above (a), does this mean that there also exists a 2-approximation algorithm for the general TSP problem without the triangle inequality? Please justify your answer.\\
 \end{enumerate}
@@ -179,20 +188,19 @@ Specifically, let $G$ be a complete undirected graph of $n$ vertices in which ea
 
 \item If we can show that there exists a 2-approximation algorithm for the general TSP problem without the triangle inequality 
 \begin{enumerate}
+
+\item if the TSP problem with triangle inequality can be constructed in polynomial time from the TSP problem without triangle inequality.
+
 \item if and only if there exists a TSP problem with triangle inequality having a 2-approximation algorithm
 
-\item the TSP problem with triangle inequality was constructed in polynomial time from the TSP problem without triangle inequality.
 \end{enumerate}
 
 Then we can say that there exists a 2-approximation algorithm for the general TSP problem without the triangle inequality.
 
-We have already shown that (ii) is true. We know that the TSP problem with the triangle inequality has a 2-approximation solution. The equivalent TSP problem without the triangle inequality, will have a cycle going through the corresponding nodes. This cycle may not satisfy that condition that the $Cycle \: Weight \leq 2 * TSP \: optimal \: cycle \: weight$ because the triangle inequality may not be satisfied. So the cycle may not be limited by $2 * TSP \: optimal \: cycle \: weight$.
+We have already shown that (i) is true. We know that the TSP problem with the triangle inequality has a 2-approximation solution. The equivalent TSP problem without the triangle inequality, will have a cycle going through the corresponding nodes. This cycle may not satisfy that condition that the $Cycle \: Weight \leq 2 * TSP \: optimal \: cycle \: weight$ because the triangle inequality may not be satisfied. So the cycle may not be limited by $2 * TSP \: optimal \: cycle \: weight$. The reason is that after we find a minimum spanning tree for the graph, when we do the pre-order tree traversal for finding the cycle, it may not be limited by twice the optimum cycle weight.
 
 This means that even though (a) is true, there may not exist a 2-approximation algorithm for the general TSP problem without the triangle inequality.
 \end{enumerate}
-
-
-
 
 \end{enumerate}
 
